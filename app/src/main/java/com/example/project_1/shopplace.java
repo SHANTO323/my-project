@@ -11,12 +11,15 @@ public class shopplace extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent = getIntent();
-        String s = intent.getStringExtra(MainActivity.MSG);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopplace);
-        TextView textView = findViewById(R.id.textView1);
-        textView.setText(s);
+
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.MSG);
+        TextView textView = findViewById(R.id.myOrder);
+        textView.setText(message);
+
     }
 
     public void HOME(View view){

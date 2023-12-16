@@ -16,10 +16,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void next_page(View view){
-        EditText text1 = findViewById(R.id.editText1);
-        EditText text2 = findViewById(R.id.editText2);
-        String msg = "Your name is " + text1 + " and Your PassWord Is " + text2 + "\n" + "YOU CAN ENTER";
         Intent newScreen = new Intent(this,shopplace.class);
+
+        EditText editText1 = findViewById(R.id.editText1);
+        EditText editText2 = findViewById(R.id.editText2);
+
+        String msg = "Your name is " + editText1.getText().toString() +
+                " and Your PassWord Is " + editText2.getText().toString() + "\n" + "YOU CAN ENTER";
         newScreen.putExtra(MSG,msg);
         startActivity(newScreen);
     }
