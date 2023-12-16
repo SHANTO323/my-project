@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textColorHint="#F8F7F7"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button1"
