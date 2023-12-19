@@ -16,9 +16,9 @@ public class shopplace extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.MSG);
-        TextView textView = findViewById(R.id.myOrder);
-        textView.setText(message);
+        // String message = intent.getStringExtra(MainActivity.MSG);
+        //TextView textView = findViewById(R.id.myOrder);
+        //textView.setText(message);
 
     }
 

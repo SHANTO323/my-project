@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         EditText editText1 = findViewById(R.id.editText1);
         EditText editText2 = findViewById(R.id.editText2);
 
-        String msg = "Your name is " + editText1.getText().toString() +
-                " and Your PassWord Is " + editText2.getText().toString() + "\n" + "YOU CAN ENTER";
-        newScreen.putExtra(MSG,msg);
+        //String msg = "Your name is " + editText1.getText().toString() +
+        //        " and Your PassWord Is " + editText2.getText().toString() + "\n" + "YOU CAN ENTER";
+        //newScreen.putExtra(MSG,msg);
         startActivity(newScreen);
     }
 }
